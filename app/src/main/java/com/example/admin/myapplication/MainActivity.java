@@ -1,9 +1,9 @@
 package com.example.admin.myapplication;
 
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 
 import com.huawei.android.pushagent.api.PushManager;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.e("version",TIMManager.getInstance().getVersion());
+        Log.e("version", TIMManager.getInstance().getVersion());
     }
     private void iniyTecentIM() {
         Log.e("version", TIMManager.getInstance().getVersion());
